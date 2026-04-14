@@ -8,15 +8,22 @@
     <title>BG Comparison tool</title>
   </head>
   <body>
-    <header>
-      <h1><span>Boardgame Comparison Tool</span></h1>
+    <header class="main-header">
+      <div>
+        <h1><span>Boardgame Comparison Tool</span></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a src="#about">About</a></li>
+          <li><a src="#contact">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
+    <main class="layout">
       <div class="container">
         <article class="boardgame-1">
           <search class="boardgame-finder">
-            <label for="search-bar-1">Boardgame 1</label>
-            <input type="text" id="search-bar-1" />
+            <input type="text" id="search-bar-1" placeholder="Select a boardgame" />
             <ul>
               <li>Ark Nova</li>
               <li>Heat</li>
@@ -24,8 +31,17 @@
             </ul>
           </search>
           <div class="boardgame-card-1">
+            <div class="rating-container">
+              <div class="rating">Rating</div>
+            </div>
             <div class="boardgame-placeholder">
               <img src="" alt="" />
+            </div>
+            <div class="boardgame-information">
+              <h2><span>BG Title</span></h2>
+              <p class="information author"><span>Designer:</span></p>
+              <p class="information artist"><span>Artist:</span></p>
+              <p class="information publisher"><span>Publisher:</span></p>
             </div>
           </div>
         </article>

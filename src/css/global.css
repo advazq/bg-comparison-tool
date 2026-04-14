@@ -18,6 +18,35 @@
 
 body {
   --font-inter: "Inter", Helvetica, sans-serif;
+  --black: #222222;
+  --gray: #272727;
+  --white: #e6e6e6;
 
   font-family: var(--font-inter);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 5rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
