@@ -1,0 +1,23 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/montserrat-v31-latin-regular.woff2") format("woff2");
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/inter-v20-latin-regular.woff2") format("woff2");
+}
+
+body {
+  --font-inter: "Inter", Helvetica, sans-serif;
+
+  font-family: var(--font-inter);
+}
