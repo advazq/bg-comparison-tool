@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <div>
-        <h1><span>Boardgame Comparison Tool</span></h1>
+        <h1><span class="title">BGG Versus</span></h1>
       </div>
       <nav>
         <ul>
@@ -21,24 +21,35 @@
     </header>
     <main class="layout">
       <div class="container">
-        <article class="boardgame-1">
+        <article class="boardgame-panel bg-1">
           <search class="boardgame-finder">
+            <div class="boardgame-placeholder">
+              <img src="https://placehold.co/150x150" alt="" />
+            </div>
             <input type="text" id="search-bar-1" placeholder="Select a boardgame" />
-            <ul>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="input-chevron"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+            <ul class="bg-list hidden">
               <li>Ark Nova</li>
               <li>Heat</li>
               <li>Ticket To Ride!</li>
             </ul>
           </search>
-          <div class="boardgame-card-1">
-            <div class="rating-container">
-              <div class="rating">Rating</div>
-            </div>
-            <div class="boardgame-placeholder">
-              <img src="" alt="" />
-            </div>
-            <div class="boardgame-information">
-              <h2><span>BG Title</span></h2>
+          <div class="boardgame-card">
+            <div class="boardgame-information hidden">
+              <h2><span>BG - Title > Hidden</span></h2>
               <p class="information author"><span>Designer:</span></p>
               <p class="information artist"><span>Artist:</span></p>
               <p class="information publisher"><span>Publisher:</span></p>
@@ -46,17 +57,40 @@
           </div>
         </article>
 
-        <article class="boardgame-selector-2">
+        <article class="boardgame-panel bg-1">
           <search class="boardgame-finder">
-            <label for="search-bar-2">Boardgame 2</label>
-            <input type="text" id="search-bar-2" />
-            <ul>
+            <div class="boardgame-placeholder">
+              <img src="https://placehold.co/150x150" alt="" />
+            </div>
+            <input type="text" id="search-bar-1" placeholder="Select a boardgame" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="input-chevron"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+            <ul class="bg-list hidden">
               <li>Ark Nova</li>
               <li>Heat</li>
               <li>Ticket To Ride!</li>
             </ul>
           </search>
-          <div class="boardgame-card-2"></div>
+          <div class="boardgame-card">
+            <div class="boardgame-information hidden">
+              <h2><span>BG - Title > Hidden</span></h2>
+              <p class="information author"><span>Designer:</span></p>
+              <p class="information artist"><span>Artist:</span></p>
+              <p class="information publisher"><span>Publisher:</span></p>
+            </div>
+          </div>
         </article>
       </div>
     </main>
