@@ -1,9 +1,13 @@
-// Lógica para girar chevron de input
+// Gestor de eventos
+const inputChevron = document.querySelectorAll(".input-chevron");
+console.log(inputChevron);
 
-const inputChevron = document.querySelector(".input-chevron");
-
-const rotateChevron = () => {
-  inputChevron.classList.toggle("rotate-chevron");
+const eventManager = {
+  handleEvent: function (ev) {
+    if (ev.type === "click") {
+      ev.currentTarget.classList.toggle("rotate-chevron");
+    }
+  },
 };
 
-inputChevron.addEventListener("click", rotateChevron);
+inputChevron.forEach((element) => element.addEventListener("click", eventManager));
