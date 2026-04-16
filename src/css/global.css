@@ -96,7 +96,7 @@ body {
     position: absolute;
     top: 174px;
     right: 160px;
-    transition: rotate 300ms ease;
+    transition: transform 300ms ease;
 
     &:hover {
       cursor: pointer;
