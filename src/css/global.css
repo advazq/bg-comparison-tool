@@ -83,7 +83,7 @@ body {
 
     &:focus {
       color: var(--white);
-      border: 0.5px solid #e6f082;
+      border: 1px solid #fb7b2b;
       outline: none;
     }
   }
@@ -96,11 +96,16 @@ body {
     position: absolute;
     top: 174px;
     right: 160px;
+    transition: rotate 300ms ease;
 
     &:hover {
       cursor: pointer;
     }
   }
+}
+
+.rotate-chevron {
+  transform: rotate(180deg);
 }
 
 .hidden {
