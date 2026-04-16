@@ -11,6 +11,9 @@ importers:
       gh-pages:
         specifier: ^6.3.0
         version: 6.3.0
+      lightningcss:
+        specifier: ^1.32.0
+        version: 1.32.0
       oxfmt:
         specifier: ^0.45.0
         version: 0.45.0

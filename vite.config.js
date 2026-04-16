@@ -9,7 +9,10 @@ export default defineConfig({
   mode: prod ? "production" : "development",
   publicDir: "../public",
   plugins: [],
-  server: { port: 1234 },
+  css: {
+    transformer: "lightningcss",
+  },
+  server: { port: 5173 },
   build: {
     outDir: "../dist",
   },
