@@ -1,6 +1,5 @@
 // Gestor de eventos
 const inputChevron = document.querySelectorAll(".input-chevron");
-console.log(inputChevron);
 
 const eventManager = {
   handleEvent: function (ev) {
