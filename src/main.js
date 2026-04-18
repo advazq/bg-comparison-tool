@@ -6,7 +6,12 @@ const eventManager = {
   handleEvent: function (ev) {
     if (ev.type === "click") {
       ev.currentTarget.classList.toggle("rotate-chevron");
-      ev.boardgameSelector.classList.toggle("hidden");
+
+      // Busco la lista correspondiente al chevron clicado por el usuario y hago toggle a la clase
+      const clickedChevron = ev.currentTarget;
+      const boardgameListParent = clickedChevron.closest(".boardgame-finder");
+      const selectedBoardgameList = boardgameListParent.querySelector(".bg-list");
+      selectedBoardgameList.classList.toggle("hidden");
     }
   },
 };
